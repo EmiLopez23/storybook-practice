@@ -66,3 +66,28 @@ export const Disabled = {
     disabled: true,
   },
 };
+
+export const Small = {
+  args: {
+    type: "primary",
+    children: "Button",
+    size: "small",
+  },
+};
+
+export const Middle = {
+  args: {
+    type: "primary",
+    children: "Button",
+    size: "middle",
+  },
+};
+
+export const Large = {
+  args: {
+    type: "primary",
+    children: "Button",
+    size: "large",
+  },
+};
+
