@@ -1,14 +1,19 @@
-import {Typography} from "antd";
+import { Typography, ConfigProvider } from "antd";
 import PropTypes from "prop-types";
+import customTheme from "../../../util/theme";
+import CustomProvider from "../CustomProvider/CustomProvider";
 
 const { Text, Link } = Typography;
 
-export const SiriusText = ({children, type, href, target, variant}) => {
+export const SiriusText = ({ children, type, href, target, variant }) => {
 
     return (
-        type === 'link' ?
-            <Link href={href} target={target}>{children}</Link> :
-            <Text type={variant}>{children}</Text>
+
+        <CustomProvider>
+            {type === 'link' ?
+                <Link href={href} target={target}>{children}</Link> :
+                <Text type={variant}>{children}</Text>}
+        </CustomProvider>
     )
 }
 
