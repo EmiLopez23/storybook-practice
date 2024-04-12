@@ -14,8 +14,8 @@ export default {
 
 export const Default = {
   args: {
-    src: "https://via.placeholder.com/150",
     width: 150,
     height: 150,
+    alt: "Placeholder Image",
   },
 };
